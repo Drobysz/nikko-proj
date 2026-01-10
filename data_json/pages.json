@@ -1,0 +1,12 @@
+[
+	{
+		"page": "articles",
+		"description": "register of articles about temples and shrines of Nikko"
+	},{
+		"page": "tickets",
+		"description": "the page where you can purchase tickets"
+	},{
+		"page": "about us",
+		"description": "information about our team and its members."
+	}
+]

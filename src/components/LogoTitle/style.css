@@ -1,0 +1,27 @@
+.logo_title {
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+	cursor: pointer;
+}
+
+.header_logo {
+	padding-top: 0.625rem;
+}
+
+.logo_title p {
+	font-size: 1.2rem;
+}
+
+@media (max-width: 645px) {
+	.logo_title p {
+		display: none;
+	}
+}
+
+@media (max-width: 430px) {
+	.header_logo {
+		width: 45px;
+		height: 45px;
+	}
+}

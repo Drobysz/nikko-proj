@@ -1,0 +1,75 @@
+.screen_bar {
+	position: absolute;
+	left: 30px;
+	bottom: 20px;
+	width: fit-content;
+	height: 52.5px;
+	background-color: rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(10px);
+	border-radius: 1.063rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0.938rem 1.063rem;
+}
+
+.bar_lines {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+	gap: 0.625rem;
+}
+
+.bar_line {
+	height: 2px;
+	background-color: var(--gray-light);
+}
+
+.bar_title {
+	display: flex;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+.article_title,
+.article_link {
+	margin: 0;
+	color: white;
+}
+
+.article_link {
+	font-size: 1.25rem;
+}
+
+.article_title {
+	width: fit-content;
+	font-size: 1.563rem;
+}
+
+.fill {
+	display:block;
+	height:100%;
+	width:0%;
+	background:#fff;
+	border-radius: inherit;
+}
+
+.fill.run{
+  animation: load 5s linear forwards;
+}
+
+@keyframes load{
+  to { width: 100%; }
+}
+
+
+@media (max-width: 650px) {
+	.bar_title h2,
+	.bar_title p {
+		font-size: 0.65rem;
+	}
+
+	.screen_bar {
+		height: 30px;
+		padding: 1rem 0.75rem;
+	}
+}

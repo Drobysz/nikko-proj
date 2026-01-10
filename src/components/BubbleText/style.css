@@ -1,0 +1,51 @@
+.bubble_title {
+  display: flex;
+  gap: 0.1rem
+}
+
+.bubble_text {
+  transition:
+    0.35s font-weight,
+    0.35s color;
+  color: var(--brown-dark);
+  font-size: 6rem;
+}
+
+.bubble_text:hover {
+  font-weight: 900;
+  color: #ffdd00;
+}
+
+/* To the right */
+.bubble_text:hover + .bubble_text {
+  font-weight: 500;
+  color: #e9cb04;
+}
+
+.bubble_text:hover + .bubble_text + .bubble_text {
+  font-weight: 300;
+  color: #d8bc05;
+}
+
+/* To the left */
+.bubble_text:has(+ .bubble_text:hover) {
+  font-weight: 500;
+  color: #e9cb04;
+}
+
+.bubble_text:has(+ .bubble_text + .bubble_text:hover) {
+  font-weight: 300;
+  color: #d8bc05;
+}
+
+@media (max-width: 530px) {
+  .bubble_text {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .bubble_text {
+    font-size: 3rem;
+  }
+}

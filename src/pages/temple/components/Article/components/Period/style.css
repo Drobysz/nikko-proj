@@ -1,0 +1,38 @@
+.period_block {
+	position: relative;
+	padding-top: 96px;
+}
+
+.period_elevator {
+	top: 96px;
+	position: sticky;
+	z-index: 1;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	height: fit-content;
+}
+
+.artile_circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 100%;
+}
+
+.article_inner_circle {
+	width: 15px;
+	height: 15px;
+	background-color: var(--gray-light);
+	border: 1px solid #b7b4b4;
+	border-radius: 100%;
+}
+
+@media (max-width: 450px) {
+	.period_title {
+		font-size: medium;
+	}
+}

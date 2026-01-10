@@ -1,0 +1,33 @@
+.article_block,
+.article_block_prghs {
+	display: flex;
+	flex-direction: column;
+}
+
+.article_block {
+	gap: 2rem;
+	padding-top: 90px;
+}
+
+.article_block_title {
+	font-size: xx-large;
+}
+
+.article_block_prghs {
+	gap: 1rem
+}
+
+.article_prgh {
+	font-size: larger;
+	color: var(--gray-light);
+}
+
+@media (max-width: 450px) {
+	.article_block_title {
+		font-size: medium;
+	}
+
+	.article_prgh {
+		font-size: small;
+	}
+}

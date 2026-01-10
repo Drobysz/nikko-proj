@@ -1,0 +1,107 @@
+.quote_section {
+	display: grid;
+	grid-template-columns: 1fr 0.65fr;
+	gap: 0.625rem;
+	align-items: flex-start;
+	width: 100%;
+	padding: 0 0.625rem;
+	margin-bottom: 14.125rem;
+	position: relative;
+	isolation: isolate;
+	background: none;
+}
+
+.quote_section::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background-image: url("../../../../../assets/background/b3.svg");
+	background-repeat: no-repeat;
+	background-position: 8% bottom;
+	background-size: 300px auto;
+	opacity: 0.2;
+	pointer-events: none;
+}
+
+.official_data {
+	display: flex;
+	flex-direction: column;
+	gap: 0.625rem;
+}
+
+.director_name_view {
+	color:  var(--brown-light);
+	font-size: 2rem;
+	margin: 0;
+}
+
+.position_name_view {
+	color: var(--gray-light);
+	font-size: 1.2rem;
+	margin: 0;
+	opacity: 0.7;
+}
+
+.p_quote {
+	color: var(--brown-light);
+	font-size: 1.5rem;
+	margin: 0;
+	height: fit-content;
+}
+
+.quote_text {
+	color: var(--gray-light);
+	font-size: 1.7rem;
+	margin: 0;
+}
+
+@media (max-width: 810px) {
+	.quote_text {
+		font-size: large;
+	}
+
+	.quote_section::before {
+		background-size: 150px auto;
+		background-position: 20% bottom;
+	}
+}
+
+@media (max-width: 600px) {
+	.quote_text {
+		font-size: medium;
+	}
+
+	.quote_section {
+		margin-bottom: 8rem;
+	}
+}
+
+@media (max-width: 520px) {
+	.quote_text {
+		font-size: smaller;
+	}
+
+	.director_name_view {
+		font-size: 1.4rem;
+	}
+
+	.position_name_view {
+		font-size: 1rem;
+	}
+
+	.quote_section {
+		margin-bottom: 4rem;
+	}
+}
+
+@media (max-width: 430px) {
+	.quote_text {
+		font-size: 0.6rem;
+	}
+
+	.quote_section::before {
+		background-size: 100px auto;
+		background-position: 20% bottom;
+	}
+}

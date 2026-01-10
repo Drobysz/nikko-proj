@@ -1,0 +1,25 @@
+.screen_section {
+	display: flex;
+	justify-content: center;
+	padding-top: 2.313rem;
+	width: 100%;
+	height: 80vh;
+	margin-bottom: 6.875rem;
+}
+
+.screen_frame {
+	width: 100%;
+	height: 100%;
+	border-radius: 0.938rem;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+@media (max-width: 650px) {
+	.screen_section {
+		height: 50vh;
+		margin-bottom: 4rem;
+	}
+}

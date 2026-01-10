@@ -1,0 +1,28 @@
+.article {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 15rem;
+}
+
+.article .progress-line {
+  position: absolute;
+  left: 13px;
+  top: 5%;
+  width: 4px;
+  height: calc(var(--progress, 0) * 115%);
+  background: var(--gold);
+  transform-origin: top;
+}
+
+.article_paragraphes {
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+}
+
+.article_paragraph {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}

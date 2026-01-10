@@ -1,0 +1,38 @@
+[
+	{
+		"name": "standard",
+		"services": [
+			"Access to main shrine and temple areas",
+			"Visitor map and basic guide",
+			"Standard visiting hours"
+		],
+		"recommended": false
+	},
+
+	{
+		"name": "medium",
+		"services": [
+			"Access to main shrine and temple areas",
+			"Visitor map and basic guide",
+			"Standard visiting hours",
+			"Entry to selected interior halls",
+			"Multilingual audio guide"
+		],
+		"recommended": true
+	},
+
+	{
+		"name": "full fare",
+		"services": [
+			"Access to main shrine and temple areas",
+			"Visitor map and basic guide",
+			"Standard visiting hours",
+			"Entry to selected interior halls",
+			"Multilingual audio guide",
+			"Full access to all interior areas",
+			"Guided tour with cultural expert",
+			"Fast-track entry to all sites"
+		],
+		"recommended": false
+	}
+]
