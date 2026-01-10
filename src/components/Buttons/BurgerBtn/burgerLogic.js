@@ -1,7 +1,6 @@
 export function burgerLogic(root = document) {
 	const wrapper = document.getElementById("opacity_wrapper");
 	const btn = document.querySelector('[burger-btn]');
-	let isOpened = false;
 
 	for (let line_nb = 0; line_nb < 2; line_nb++) {
 		btn.insertAdjacentHTML('beforeend',
@@ -17,7 +16,10 @@ export function burgerLogic(root = document) {
 	root.style.height = "42px";
 
 	btn.onclick = ()=> {
+		let isOpened = sessionStorage.getItem("isMenuOpen") == "true";
 		isOpened = !isOpened;
+		sessionStorage.setItem("isMenuOpen", isOpened);
+
 		btn.classList.toggle("is_burger_open", isOpened);
 		btn.classList.toggle("is_burger_close", !isOpened);
 
