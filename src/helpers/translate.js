@@ -1,6 +1,6 @@
 export async function translate(targetLang, texts) {
   try {
-    const url = "/api/translate";
+    const url = "https://trasnlatedeepl.vercel.app/api/translate";
     const res = await fetch(url, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
