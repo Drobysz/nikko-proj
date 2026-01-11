@@ -1,6 +1,6 @@
 export async function translate(targetLang, texts) {
   try {
-    const url = "http://127.0.0.1:8787/translate";
+    const url = "/api/translate";
     const res = await fetch(url, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
