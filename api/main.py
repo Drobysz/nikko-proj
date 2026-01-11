@@ -19,7 +19,7 @@ class Req(BaseModel):
     targetLang: str
     texts: List[str]
 
-@app.post("/")
+@app.post("/api/translate")
 def translate(req: Req):
     key = os.getenv("DEEPL_API_KEY")
     if not key:
