@@ -7,4 +7,4 @@ export * from "./getPageName.js";
 export * from "./closeMenu.js";
 export * from "./setPropsToDefault.js";
 export * from "./setPageTitle.js";
-export * from "./onResize.js";
+export * from "./setListeners.js";
