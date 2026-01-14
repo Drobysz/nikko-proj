@@ -8,3 +8,4 @@ export * from "./closeMenu.js";
 export * from "./setPropsToDefault.js";
 export * from "./setPageTitle.js";
 export * from "./setListeners.js";
+export * from "./setCacheLang.js";
