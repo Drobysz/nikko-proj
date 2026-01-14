@@ -29,6 +29,7 @@ export async function PromotionsLogic() {
 			>
 				<h2 class="tarrif_container_title coda-extrabold">
 					${el.name}
+					<span class="price">${el.price}€</span>
 				</h2>
 				<ul class="services_list inter-regular">
 					${services}

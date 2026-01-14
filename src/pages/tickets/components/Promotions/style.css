@@ -38,6 +38,15 @@
 .tarrif_container_title {
 	color: white;
 	font-size: xx-large;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.price {
+	color: var(--gold);
+	font-size: large;
 }
 
 .services_list {

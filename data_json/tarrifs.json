@@ -6,6 +6,7 @@
 			"Visitor map and basic guide",
 			"Standard visiting hours"
 		],
+		"price": 16,
 		"recommended": false
 	},
 
@@ -18,6 +19,7 @@
 			"Entry to selected interior halls",
 			"Multilingual audio guide"
 		],
+		"price": 43,
 		"recommended": true
 	},
 
@@ -33,6 +35,7 @@
 			"Guided tour with cultural expert",
 			"Fast-track entry to all sites"
 		],
+		"price": 55,
 		"recommended": false
 	}
 ]
