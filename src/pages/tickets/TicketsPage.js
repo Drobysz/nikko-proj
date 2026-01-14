@@ -11,7 +11,7 @@ export async function TicketsPage() {
 	return /*html*/`
 	${Intro()}
 	${Promotions()}
-	${Notion}
+	${Notion()}
 	`
 }
 
