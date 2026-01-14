@@ -37,7 +37,7 @@
 
 .tarrif_container_title {
 	color: white;
-	font-size: xx-large;
+	font-size: x-large;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -46,7 +46,7 @@
 
 .price {
 	color: var(--gold);
-	font-size: x-large;
+	font-size: large;
 }
 
 .services_list {

@@ -1,6 +1,7 @@
 import {
 	Intro,
-	Promotions, PromotionsInit
+	Promotions, PromotionsInit,
+	Notion
 } from "./components/index.js";
 
 export async function TicketsPage() {
@@ -10,6 +11,7 @@ export async function TicketsPage() {
 	return /*html*/`
 	${Intro()}
 	${Promotions()}
+	${Notion}
 	`
 }
 
