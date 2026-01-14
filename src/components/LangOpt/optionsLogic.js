@@ -77,6 +77,7 @@ export default function optionsLogic() {
 				langOpt.style.display = "none";
 				label.textContent = name;
 				appStore.setState({language: lang});
+				localStorage.setItem("language", lang);
 
 				closeOptions();
 

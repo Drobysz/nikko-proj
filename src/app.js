@@ -23,8 +23,16 @@ root.innerHTML = pageContent;
 
 await HeaderInit();
 
+const cacheLanguage = localStorage.getItem("language");
+if (cacheLanguage) {
+  appStore.setState({language: cacheLanguage})
+} else {
+  localStorage.setItem("language", "en");
+}
+
 const fromHash = getPageName();
 const param = getParam();
+
 await changePage(fromHash || "home", param && param);
 
 setListeners();
