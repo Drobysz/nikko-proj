@@ -2,7 +2,7 @@ import {
 	changePage,
 	getPageName,
 	getParam
-} from "./helpers/index.js";
+} from "./index.js";
 
 export function onResize() {
 	const menu = document.querySelector(".menu");
