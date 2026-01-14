@@ -1,0 +1,22 @@
+.ticket_notion_body {
+	margin-bottom: 8rem;
+	font-size: x-large;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.3rem;
+	color: var(--white-dark);
+}
+
+.aggragator_link_view {
+	text-decoration: none;
+	color: var(--gold);
+	opacity: 0.9;
+	transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-webkit-transition: opacity 0.3s linear;
+}
+
+.aggragator_link_view:hover {
+	opacity: 1;
+}
