@@ -3,14 +3,17 @@ import { textLib } from "../../../../context/textLib.js";
 export function Notion () {
 	textLib.addText(
 		"All tickets can be purchesed",
-		"aggragator_link"
+		"ticket_notion_text"
 	);
 
 	textLib.addText("here", "aggragator_link");
 
 	return /* html */ `
 	<div class="ticket_notion_body baumans-regular">
-		<span id="ticket_notion">
+		<span
+			id="ticket_notion_text"
+			class="ticket_notion_text_view"
+		>
 			All tickets can be purchesed
 		</span>
 		<a

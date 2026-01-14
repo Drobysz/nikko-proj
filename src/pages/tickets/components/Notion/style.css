@@ -1,13 +1,11 @@
 .ticket_notion_body {
 	margin-bottom: 8rem;
 	font-size: x-large;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
 	gap: 0.3rem;
-	color: var(--white-dark);
 }
 
+a,
 .aggragator_link_view {
 	text-decoration: none;
 	color: var(--gold);
@@ -19,4 +17,8 @@
 
 .aggragator_link_view:hover {
 	opacity: 1;
+}
+
+.ticket_notion_text_view {
+	color: var(--white-dark);
 }
