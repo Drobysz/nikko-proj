@@ -5,7 +5,7 @@ import {
   changePage,
   getPageName,
   getParam,
-  onResize
+  setListeners
 } from "./helpers/index.js";
 
 // Layout components/Initializators
@@ -27,12 +27,6 @@ const fromHash = getPageName();
 const param = getParam();
 await changePage(fromHash || "home", param && param);
 
-window.addEventListener("popstate", async () => {
-  const page = getPageName();
-  const param = getParam();
+setListeners();
 
-  await changePage(page || "home", param && param);
-});
-
-window.addEventListener("resize", onResize);
 appStore.subscribe(textLib.translateAll);
