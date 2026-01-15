@@ -23,7 +23,7 @@ export function ContactData() {
 			${c == "map"
 				? `<a
 				id="map_link"
-				href="https://www.google.com/maps?ll=36.588431,140.815322&z=9&t=m&hl=ru&gl=FR&mapclient=embed&q=%D0%9D%D0%B8%D0%BA%D0%BA%D0%BE+%D0%A2%D0%BE%D1%82%D0%B8%D0%B3%D0%B8+%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F"
+				href="https://www.google.com/maps/place/Nikk%C5%8D+Shrine+Temples+Cultural+Property+Preservation+Society/@36.759684,139.614743,14z/data=!4m6!3m5!1s0x601fa6daf98bd3fd:0xa7e1218f4de2fc4d!8m2!3d36.7563082!4d139.5979758!16s%2Fg%2F11btrq_hqj?hl=en&entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"
 				target="_blank">`
 				: ""
 			}
