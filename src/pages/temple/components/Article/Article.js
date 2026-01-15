@@ -8,7 +8,7 @@ import { bindScrollProgress } from "./TimeLineLogic.js";
 export function Article({blocks}) {
 	return /*html*/`
 	<section class="article">
-		${BubbleText({text: "Hisrotyline"})}
+		${BubbleText({text: "Historyline"})}
 		<div class="progress-line"></div>
 		<section class="article_paragraphes">
 			${blocks.map(({period, block_name, paragraphes})=> {
