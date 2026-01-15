@@ -51,7 +51,7 @@ export function ContactData() {
 		<div class="map">
 			<iframe
 				class="map_frame"
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408682.27404590126!2d139.260576822557!3d36.84654089483695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601fa4b7c69ac8d1%3A0x6f526b42961dd1c0!2z0J3QuNC60LrQviwg0KLQvtGC0LjQs9C4LCDQr9C_0L7QvdC40Y8!5e0!3m2!1sru!2sfr!4v1766502872767!5m2!1sru!2sfr"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13895.130610243139!2d139.58659063914808!3d36.7578041805095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601fa6daf98bd3fd%3A0xa7e1218f4de2fc4d!2sNikk%C5%8D%20Shrine%20Temples%20Cultural%20Property%20Preservation%20Society!5e0!3m2!1sen!2sfr!4v1768512381387!5m2!1sen!2sfr"
 				width="400"
 				height="300"
 				style="border:0;"
