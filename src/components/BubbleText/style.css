@@ -8,7 +8,7 @@
     0.35s font-weight,
     0.35s color;
   color: var(--brown-dark);
-  font-size: 6rem;
+  font-size: 2rem;
 }
 
 .bubble_text:hover {
