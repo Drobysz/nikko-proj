@@ -1,6 +1,5 @@
 .bubble_title {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   width: 100%;
   gap: 0.1rem;
   font-family: "Inter", sans-serif;
