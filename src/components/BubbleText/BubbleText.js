@@ -3,7 +3,7 @@ export function BubbleText({ text }) {
 	<h2 class="bubble_title">
 		${text.split("").map(child => (
 			/*html*/`
-			<span class="bubble_text inter-semibold">
+			<span class="inter-regular bubble_text">
 				${child}
 			</span>
 			`
