@@ -3,7 +3,7 @@
   gap: 0.1rem;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .bubble_text:hover + .bubble_text + .bubble_text {
-  font-weight: 300;
+  font-weight: 400;
   color: #d8bc05;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .bubble_text:has(+ .bubble_text + .bubble_text:hover) {
-  font-weight: 300;
+  font-weight: 400;
   color: #d8bc05;
 }
 
