@@ -40,10 +40,10 @@ export default function optionsLogic() {
 	const langs = {
 		en: 'English',
 		fr: 'Français',
-		ja: '日本語',
 		ru: 'Русский',
+		de: 'Deutsch',
+		ja: '日本語',
 		zh: '中国',
-		de: 'Deutsch'
 
 	};
 	let isOpened = false;
