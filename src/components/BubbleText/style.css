@@ -4,7 +4,7 @@
   gap: 0.1rem;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -23,23 +23,23 @@
 
 /* To the right */
 .bubble_text:hover + .bubble_text {
-  font-weight: 600;
+  font-weight: 500;
   color: #e9cb04;
 }
 
 .bubble_text:hover + .bubble_text + .bubble_text {
-  font-weight: 400;
+  font-weight: 300;
   color: #d8bc05;
 }
 
 /* To the left */
 .bubble_text:has(+ .bubble_text:hover) {
-  font-weight: 600;
+  font-weight: 500;
   color: #e9cb04;
 }
 
 .bubble_text:has(+ .bubble_text + .bubble_text:hover) {
-  font-weight: 400;
+  font-weight: 300;
   color: #d8bc05;
 }
 
