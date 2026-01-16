@@ -6,7 +6,7 @@
 		"page": "tickets",
 		"description": "the page where you can get acquinted with our tariffs"
 	},{
-		"page": "about us",
-		"description": "information about our team and its members."
+		"page": "home",
+		"description": "main illustrative page"
 	}
 ]
