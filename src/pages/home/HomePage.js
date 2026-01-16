@@ -3,13 +3,15 @@ import {
 	Pages, PagesInit,
 	Quote,
 	Team,
-	Articles, ArticlesInit	
+	Articles, ArticlesInit,
+	About
 } from "./components/index.js"
 
 export async function HomePage() {
 	return /*html*/`
 	${await Screen()}
 	${Pages()}
+	${About()}
 	${Quote()}
 	${Articles()}
 	${Team()}

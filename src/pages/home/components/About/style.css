@@ -1,0 +1,108 @@
+.nikko_section {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 9rem;
+}
+
+.nikko_section::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background-image: url("../../../../../assets/background/b2.svg");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 420px auto;
+	opacity: 0.05;
+	pointer-events: none;
+}
+
+.nikko_img {
+	height: 420px;
+	width: 60%;
+	background:
+		url("../../../../../assets/buildings/nikko3.jpg")
+		center / cover no-repeat;
+	border: 1px solid black;
+	border-radius: 0.938rem;
+	justify-self: flex-end;
+}
+
+.nikko_title_view {
+	font-size: 2.5rem;
+	color: var(--brown-dark);
+}
+
+.nikko_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 4.25rem;
+}
+
+.nikko_paragraph {
+	display: flex;
+	flex-direction: column;
+	gap: 1.188rem;
+}
+
+.nikko_desc_view {
+	max-width: 420px;
+	color: var(--gray-light);
+}
+
+@media (max-width: 870px) {
+	.nikko_section {
+		align-items: center;
+	}
+
+	.nikko_img {
+		height: 360px;
+		width: 70%;
+	}
+
+	.nikko_desc_view {
+		font-size: small;
+	}
+
+	.nikko_text {
+		gap: 1.5rem;
+	}
+}
+
+@media (max-width: 780px) {
+	.nikko_img {
+		height: 280px;
+		width: 70%;
+	}
+
+	.nikko_section::before {
+		background-size: 320px auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.nikko_section {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.nikko_title_view {
+		font-size: 2rem;
+	}
+
+	.nikko_desc_view {
+		font-size: 0.7rem;
+	}
+
+	.nikko_text {
+		order: 2;
+	}
+
+	.nikko_img {
+		order: 1;
+		height: 180px;
+	}
+}
