@@ -41,7 +41,10 @@ export default function optionsLogic() {
 		en: 'English',
 		fr: 'Français',
 		ja: '日本語',
-		ru: 'Русский'
+		ru: 'Русский',
+		zh: '中国',
+		de: 'Deutsch'
+
 	};
 	let isOpened = false;
 	const currLang = appStore.getState().language;
