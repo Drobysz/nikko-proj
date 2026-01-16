@@ -1,7 +1,6 @@
 .nikko_section {
 	position: relative;
 	display: grid;
-	align-items: center;
 	grid-template-columns: 1fr 1fr;
 	margin-bottom: 13rem;
 }
@@ -50,7 +49,7 @@
 
 .nikko_desc_view {
 	max-width: 420px;
-	font-size: x-large;
+	font-size: large;
 	color: var(--gray-light);
 }
 
