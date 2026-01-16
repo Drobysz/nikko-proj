@@ -1,6 +1,7 @@
 .bubble_title {
   display: flex;
-  gap: 0.1rem
+  gap: 0.1rem;
+  font-weight: 200;
 }
 
 .bubble_text {
@@ -8,7 +9,7 @@
     0.35s font-weight,
     0.35s color;
   color: var(--brown-dark);
-  font-size: 2rem;
+  font-size: 6rem;
 }
 
 .bubble_text:hover {
