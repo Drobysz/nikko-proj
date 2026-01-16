@@ -26,7 +26,7 @@
 		center / cover no-repeat;
 	border: 1px solid black;
 	border-radius: 0.938rem;
-	justify-self: flex-start;
+	justify-self: center;
 }
 
 .nikko_title_view {
@@ -37,7 +37,7 @@
 .nikko_text {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-end;
 	gap: 4.25rem;
 }
 
