@@ -15,20 +15,50 @@ header {
 	gap: 1.875rem;
 	padding: 0.625rem 1rem;
 	border-radius: 0.938rem;
-	box-shadow:
-		rgba(0, 0, 0, 0.25) 0px 17px 10px -12px;
 	transition: height 0.5s ease-in-out;
 	-webkit-transition: height 0.5s ease-in-out;
 	-moz-transition: height 0.5s ease-in-out;
 }
 
 .menu_closed {
-	background-color: var(--white-dark);
+	background: rgba(255, 255, 255, 0.55);
+	backdrop-filter: blur(18px) saturate(160%);
+	-webkit-backdrop-filter: blur(18px) saturate(160%);
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	box-shadow:
+		0 10px 30px rgba(0, 0, 0, 0.10),
+		inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.menu_closed::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background: linear-gradient(180deg, rgba(255,255,255,.25), rgba(255,255,255,0));
+	mix-blend-mode: overlay;
+	opacity: .8;
+}
+
+.menu_closed::before {
+	content: "";
+	position: absolute;
+	inset: -40% -20%;
+	pointer-events: none;
+
+	background:
+		radial-gradient(60% 60% at 20% 20%, rgba(255,255,255,.75), transparent 60%),
+		radial-gradient(55% 55% at 80% 0%, rgba(255,255,255,.45), transparent 60%),
+		radial-gradient(65% 65% at 70% 90%, rgba(255,255,255,.35), transparent 60%);
+	transform: rotate(-8deg);
+	opacity: .9;
 }
 
 .menu_open {
 	background-color: white;
 	gap: 1rem;
+	box-shadow:
+		rgba(0, 0, 0, 0.25) 0px 17px 10px -12px;
 }
 
 nav {
