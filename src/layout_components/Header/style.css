@@ -40,20 +40,6 @@ header {
 	opacity: .8;
 }
 
-.menu_closed::before {
-	content: "";
-	position: absolute;
-	inset: -40% -20%;
-	pointer-events: none;
-
-	background:
-		radial-gradient(60% 60% at 20% 20%, rgba(255,255,255,.75), transparent 60%),
-		radial-gradient(55% 55% at 80% 0%, rgba(255,255,255,.45), transparent 60%),
-		radial-gradient(65% 65% at 70% 90%, rgba(255,255,255,.35), transparent 60%);
-	transform: rotate(-8deg);
-	opacity: .9;
-}
-
 .menu_open {
 	background-color: white;
 	gap: 1rem;
