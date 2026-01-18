@@ -20,9 +20,7 @@ header {
 	-moz-transition: height 0.5s ease-in-out;
 }
 
-.menu:has(.lang_opt_block.open),
-.menu:has(.lang_opt_block.active),
-.menu:has(.lang_opt_block.show) {
+.menu:has(.lang_opt_block) {
 	overflow: visible;
 }
 
