@@ -39,8 +39,6 @@
 	list-style-type: none;
 	position: fixed;
 	z-index: 100;
-	top: 24px;
-	left: 0px;
 	background-color: white;
 	border-radius: 0.7rem;
 	border: 3px solid var(--gray-light);
