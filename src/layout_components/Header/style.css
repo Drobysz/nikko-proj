@@ -35,9 +35,9 @@ header {
 
 .menu_closed::before{
 	content:"";
-	position:absolute;
-	inset:0;
-	pointer-events:none;
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
 	z-index:0;
 
 	background: rgba(255,255,255,.55);
@@ -47,8 +47,8 @@ header {
 }
 
 .menu_closed::after{
-	content:"";
-	position:absolute;
+	content: "";
+	position: absolute;
 	inset:0;
 	pointer-events:none;
 	z-index:0;
