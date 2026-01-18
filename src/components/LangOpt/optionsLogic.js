@@ -10,8 +10,8 @@ export default function optionsLogic() {
 		if (!options) return;
 
 		const r = langOptBtn.getBoundingClientRect();
-		options.style.left = `${r.left}px`;
-		options.style.top  = `${r.bottom + 4}px`;
+		// options.style.left = `${r.left}px`;
+		// options.style.top  = `${r.bottom + 4}px`;
 
 		options.style.display = "flex";
 		options.style.opacity = "0";
