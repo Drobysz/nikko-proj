@@ -25,7 +25,7 @@ header {
 	position: relative;
 	isolation: isolate;
 	z-index: 0;
-	background: rgba(255, 255, 255, 0.55);
+	background: transparent;
 	border: 1px solid rgba(255, 255, 255, 0.35);
 	box-shadow:
 		0 10px 30px rgba(0, 0, 0, 0.10),
@@ -37,7 +37,8 @@ header {
 	position: absolute;
 	inset: 0;
 	pointer-events: none;
-	z-index: -1;
+	background: rgba(255, 255, 255, 0.55);
+	z-index: 0;
 	border-radius: inherit;
 	backdrop-filter: blur(18px) saturate(160%);
 	-webkit-backdrop-filter: blur(18px) saturate(160%);
@@ -46,7 +47,7 @@ header {
 .menu_closed::after {
 	content: "";
 	position: absolute;
-	inset: -1;
+	inset: 0;
 	pointer-events: none;
 	z-index: 0;
 	background: linear-gradient(180deg, rgba(255,255,255,.25), rgba(255,255,255,0));
