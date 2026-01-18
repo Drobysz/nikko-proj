@@ -20,6 +20,13 @@ header {
 	-moz-transition: height 0.5s ease-in-out;
 }
 
+.menu:has(.lang_opt_block.open),
+.menu:has(.lang_opt_block.active),
+.menu:has(.lang_opt_block.show) {
+	overflow: visible;
+}
+
+
 .menu_closed {
 	background: rgba(255, 255, 255, 0.55);
 	backdrop-filter: blur(18px) saturate(160%);
