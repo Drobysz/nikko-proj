@@ -5,9 +5,12 @@ export default function optionsLogic() {
 	const options = document.getElementById("lang_opts");
 	const selArrow = document.getElementById("selector_arrow");
 	const langOptBtn = document.getElementById("lang_selector_btn");
+	const menu = langOptBtn?.closest(".menu");
 
 	const openOptions = () => {
 		if (!options) return;
+
+		menu?.classList.add("lang_open");
 
 		const r = langOptBtn.getBoundingClientRect();
 		options.style.left = `${r.left}px`;
@@ -31,6 +34,7 @@ export default function optionsLogic() {
 		const onEnd = (e) => {
 			if (e.propertyName !== "opacity") return;
 			options.style.display = "none";
+			menu?.classList.remove("lang_open");
 			options.removeEventListener("transitionend", onEnd);
 		};
 
