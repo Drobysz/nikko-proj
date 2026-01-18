@@ -8,6 +8,7 @@ header {
 .menu {
 	display: flex;
 	overflow: hidden;
+	z-index: 110;
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
@@ -30,9 +31,8 @@ header {
 		inset 0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
-/* Put the liquid-glass effect on a pseudo-element so it doesn't change the containing block
-   for position: fixed descendants (e.g., the language dropdown). */
 .menu_closed::before {
+	z-index: 109;
 	content: "";
 	position: absolute;
 	inset: 0;
@@ -43,6 +43,7 @@ header {
 }
 
 .menu_closed::after {
+	z-index: 109;
 	content: "";
 	position: absolute;
 	inset: 0;
