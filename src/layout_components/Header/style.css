@@ -16,6 +16,8 @@ header {
 	gap: 1.875rem;
 	padding: 0.625rem 1rem;
 	border-radius: 0.938rem;
+	backdrop-filter: blur(18px) saturate(160%);
+	-webkit-backdrop-filter: blur(18px) saturate(160%);
 	transition: height 0.5s ease-in-out;
 	-webkit-transition: height 0.5s ease-in-out;
 	-moz-transition: height 0.5s ease-in-out;
@@ -39,8 +41,6 @@ header {
 	inset: 0;
 	pointer-events: none;
 	z-index: -1;
-	backdrop-filter: blur(18px) saturate(160%);
-	-webkit-backdrop-filter: blur(18px) saturate(160%);
 	border-radius: inherit;
 }
 
