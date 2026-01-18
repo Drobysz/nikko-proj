@@ -35,28 +35,38 @@ header {
 
 .menu_closed::before{
 	content:"";
-	position: absolute;
+	position:absolute;
 	inset: 0;
-	pointer-events: none;
+	pointer-events:none;
 	z-index:0;
 
-	background: rgba(255,255,255,.55);
-	backdrop-filter: blur(18px) saturate(160%);
-	-webkit-backdrop-filter: blur(18px) saturate(160%);
+	/* liquid glass layer */
+	background: linear-gradient(
+		180deg,
+		rgba(255,255,255,0.35),
+		rgba(255,255,255,0.15)
+	);
+	backdrop-filter: blur(22px) saturate(175%);
+	-webkit-backdrop-filter: blur(22px) saturate(175%);
 	border-radius: inherit;
 }
 
 .menu_closed::after{
-	content: "";
-	position: absolute;
+	content:"";
+	position:absolute;
 	inset:0;
 	pointer-events:none;
 	z-index:0;
 
-	background: linear-gradient(180deg, rgba(255,255,255,.25), rgba(255,255,255,0));
+	/* specular highlight */
+	background: linear-gradient(
+		180deg,
+		rgba(255,255,255,0.55),
+		rgba(255,255,255,0.0)
+	);
 	mix-blend-mode: overlay;
 	border-radius: inherit;
-	opacity: .8;
+	opacity: .65;
 }
 
 .menu_closed > * {
