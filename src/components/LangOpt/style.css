@@ -1,6 +1,6 @@
-.lang_selector {
+/* .lang_selector {
 	position: relative;
-}
+} */
 
 .lang_selector button {
 	display: flex;
@@ -37,7 +37,7 @@
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	position: absolute;
+	position: fixed;
 	z-index: 100;
 	top: 24px;
 	left: 0px;

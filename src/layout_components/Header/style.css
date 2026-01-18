@@ -7,7 +7,7 @@ header {
 
 .menu {
 	display: flex;
-	overflow-y: hidden;
+	overflow: hidden;
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
