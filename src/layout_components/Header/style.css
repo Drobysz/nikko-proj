@@ -34,11 +34,11 @@ header {
 
 
 .menu_closed::before{
-	content:"";
-	position:absolute;
+	content: "";
+	position: absolute;
 	inset: 0;
-	pointer-events:none;
-	z-index:0;
+	pointer-events: none;
+	z-index: 1;
 
 	/* liquid glass layer */
 	background: linear-gradient(
@@ -56,7 +56,7 @@ header {
 	position:absolute;
 	inset:0;
 	pointer-events:none;
-	z-index:0;
+	z-index: 1;
 
 	/* specular highlight */
 	background: linear-gradient(
@@ -71,7 +71,7 @@ header {
 
 .menu_closed > * {
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 
 .menu_open {
