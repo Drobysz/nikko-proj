@@ -5,6 +5,7 @@ export function Results() {
 			articles-list
 			class="articles_list_view"
 		>
+			<li class="articles_status inter-regular">Loading articles...</li>
 		</ul>
 	</section>
 	`

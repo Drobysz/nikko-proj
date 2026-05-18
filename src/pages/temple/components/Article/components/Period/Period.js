@@ -1,12 +1,16 @@
 import { textLib } from "../../../../../../context/textLib.js";
+import { escapeHtml } from "../../../../../../helpers/escapeHtml.js";
 
-export function Period({ period }) {
-	const periodId = period.trim().replace(' ', '_') + "_id"
+export function Period({ period, translateText = true }) {
+	const periodText = String(period || "");
+	const periodId = periodText.trim().replace(' ', '_') + "_id"
 
-	textLib.addText(
-		period,
-		periodId
-	);
+	if (translateText) {
+		textLib.addText(
+			periodText,
+			periodId
+		);
+	}
 
 	return /*html*/`
 	<div class="period_block">
@@ -19,7 +23,7 @@ export function Period({ period }) {
 				id="${periodId}"
 				class="period_title climate-crisis-regular"
 			>
-				${period}
+				${escapeHtml(periodText)}
 			</h3>
 		</div>
 	</div>

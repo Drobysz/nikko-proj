@@ -9,3 +9,5 @@ export * from "./setPropsToDefault.js";
 export * from "./setPageTitle.js";
 export * from "./setListeners.js";
 export * from "./setCacheLang.js";
+export * from "./api.js";
+export * from "./escapeHtml.js";

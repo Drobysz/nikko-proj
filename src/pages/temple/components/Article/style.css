@@ -6,7 +6,25 @@
 	margin-bottom: 15rem;
 }
 
-.article .progress-line {
+.article_history {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.article_history_blocks {
+	width: min(100%, 760px);
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+.article_history_block {
+	width: 100%;
+}
+
+.article_timeline .progress-line {
   position: absolute;
   left: 13px;
   top: 5%;
@@ -25,4 +43,10 @@
 .article_paragraph {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+
+.article_timeline {
+	position: relative;
+	width: 100%;
+	margin-top: 8rem;
 }

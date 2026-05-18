@@ -32,6 +32,12 @@
 	font-size: x-large;
 }
 
+.article_subtitle {
+	text-align: center;
+	font-size: 1rem;
+	opacity: 0.9;
+}
+
 .tag_link,
 .tag_title {
 	font-size: 1rem;
@@ -46,6 +52,7 @@
 	background-color: var(--gray-light);
 	border-radius: 1.25rem;
 	opacity: 0.75;
+	padding: 0.25rem 0.5rem;
 }
 
 .round_sep {
@@ -63,6 +70,10 @@
 
 	.article_title {
 		font-size: 0.7rem;
+	}
+
+	.article_subtitle {
+		font-size: 0.6rem;
 	}
 
 	.article_info_text {

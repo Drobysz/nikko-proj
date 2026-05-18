@@ -1,7 +1,12 @@
+import { escapeHtml } from "../../helpers/escapeHtml.js";
+
 export function ScreenTag({
 	name = "noname",
 	id   = "none",
 	date = "none",
+	subtitle = "",
+	year = "",
+	type = "",
 	mode = "none"
 }) {
 	switch (mode) {
@@ -12,7 +17,7 @@ export function ScreenTag({
 				class="screen_tag"
 			>
 				<h2 class="tag_title cinzel-regular">
-					${name}
+					${escapeHtml(name)}
 				</h2>
 				<p class="tag_link jersey-10-regular">
 					ARTICLE
@@ -27,12 +32,23 @@ export function ScreenTag({
 				class="article_tag"
 			>
 				<h2 class="article_title cinzel-regular">
-					${name}
+					${escapeHtml(name)}
 				</h2>
+				${subtitle
+					? /*html*/`<p class="article_subtitle inter-regular">${escapeHtml(subtitle)}</p>`
+					: ""
+				}
 				<div class="article_info">
-					<p class="article_info_text jersey-10-regular">5 min read</p>
-					<span class="round_sep"></span>
-					<p class="article_info_text jersey-10-regular">${date}</p>
+					${type
+						? /*html*/`<p class="article_info_text jersey-10-regular">${escapeHtml(type)}</p>`
+						: /*html*/`<p class="article_info_text jersey-10-regular">5 min read</p>`
+					}
+					${year || date
+						? /*html*/`
+						<span class="round_sep"></span>
+						<p class="article_info_text jersey-10-regular">${escapeHtml(year || date)}</p>`
+						: ""
+					}
 				</div>
 			</div>
 			`

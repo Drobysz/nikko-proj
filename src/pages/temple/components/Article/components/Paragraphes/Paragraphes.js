@@ -1,28 +1,40 @@
 import { textLib } from "../../../../../../context/textLib.js"
+import { escapeHtml } from "../../../../../../helpers/escapeHtml.js";
 
-export function Paragraphes({ title, prghs }) {
-	const title_id = `paragraph_title_${title.replace(" ", "_")}`
-	textLib.addText(title, title_id);
+export function Paragraphes({ title, prghs = [], translateText = true }) {
+	const safeTitleText = String(title || "");
+	const paragraphs = Array.isArray(prghs)
+		? prghs
+		: prghs.en || [];
+	const title_id = `paragraph_title_${safeTitleText.replace(" ", "_")}`
+
+	if (translateText) {
+		textLib.addText(safeTitleText, title_id);
+	}
 
 	return /*html*/`
 	<article class="article_block">
 		<h3
 			class="article_block_title cinzel-regular"
-			id="${title_id}"
+			${translateText ? `id="${title_id}"` : ""}
 		>
-			${title}
+			${escapeHtml(safeTitleText)}
 		</h3>
 		<ul class="article_block_prghs">
-			${prghs.en.map(p=>{
-					const idx = p.slice(0, 6).replace(" ");
-					textLib.addText(p, idx);
+			${paragraphs.map((p, index)=>{
+					const paragraphText = String(p || "");
+					const idx = paragraphText.slice(0, 6).replace(" ");
+
+					if (translateText) {
+						textLib.addText(paragraphText, idx);
+					}
 
 					return /*html*/`
 					<p
-						id="${idx}"
+						${translateText ? `id="${idx}"` : `data-paragraph="${index}"`}
 						class="article_prgh inter-regular"
 					>
-						${p}
+						${escapeHtml(paragraphText)}
 					</p>`
 				}).join("")
 			}

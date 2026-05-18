@@ -42,6 +42,25 @@
 	border-radius: 1.25rem;
 	width: 55%;
 	z-index: 3;
+	object-fit: cover;
+	min-height: 280px;
+	background-color: rgba(80, 80, 80, 0.18);
+}
+
+.article_image_fallback {
+	aspect-ratio: 16 / 9;
+}
+
+.temple_state_section {
+	min-height: 55vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.temple_state {
+	color: var(--gray-light);
+	font-size: 1.1rem;
 }
 
 @media (max-width: 1040px) {
@@ -63,5 +82,9 @@
 	.article_intro_section {
 		height: 70vh;
 		padding-top: 35%;
+	}
+
+	.article_image {
+		min-height: 160px;
 	}
 }

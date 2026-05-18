@@ -32,10 +32,10 @@ export async function changePage(name, param = "none") {
 	const [render, init] = pages[name];
 	const isParam = param && param != "none";
 
-	const next = name == "temple"
+	const next = name == "temple" && isParam
 		? `#${name}/${param}`
 		: `#${name}`;
-	const params = name == "temple"
+	const params = name == "temple" && isParam
 		? { page: name, param }
 		: { page: name };
 	history.pushState(params, "", next);
