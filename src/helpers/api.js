@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://digital-harbor.shop/api";
+const API_BASE_URL = "https://digital-harbor.shop/nikko_api";
 
 export async function fetchJson(url, options = {}) {
 	const response = await fetch(url, {
